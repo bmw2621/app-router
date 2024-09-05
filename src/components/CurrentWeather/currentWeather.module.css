@@ -1,0 +1,58 @@
+.currentForecast {
+  display: grid;
+  grid-template: auto / auto auto;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 790px) {
+  .currentForecast {
+    grid-template: auto / auto;
+  }
+}
+
+.currentForecast > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.currentForecast h1 {
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+
+.temp {
+  font-size: 100px;
+  line-height: 100px;
+}
+
+.description {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.updated {
+  font-weight: 200;
+  font-size: 24px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats * {
+  font-size: 15px;
+  font-weight: 200;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.stats div:not(:last-child):not(:first-child) {
+  border-left: 2px solid var(--primary);
+  border-right: 2px solid var(--primary);
+}

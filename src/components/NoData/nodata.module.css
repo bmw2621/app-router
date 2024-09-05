@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.heading {
+  font-size: 80px;
+  font-weight: normal;
+  color: var(--primary);
+  text-align: center;
+}
+
+.text {
+  margin-top: 50px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.weatherMan {
+  animation: party 2s infinite;
+}
+
+@keyframes party {
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}

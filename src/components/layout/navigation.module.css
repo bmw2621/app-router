@@ -1,0 +1,36 @@
+.nav {
+  background-color: var(--primary);
+  width: 100%;
+  color: white;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.heading {
+  font-size: 50px;
+  font-weight: 200;
+}
+
+.searchInput {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  min-width: 300px;
+  color: black;
+}
+
+.searchInput::placeholder {
+  font-weight: 200;
+}
+
+.searchResult_city {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.searchResult_rest {
+  font-style: italic;
+  color: #888;
+}

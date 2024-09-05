@@ -10,13 +10,14 @@ import styles from "./forecast.module.css";
  */
 type Props = {
   day: WeatherFuture;
+  delay: number;
 };
 /**
  * Component
  */
-const ForecastCard: FC<Props> = ({ day }) => {
+const ForecastCard: FC<Props> = ({ day, delay }) => {
   return (
-    <article className={styles.card}>
+    <article className={styles.card} style={{ animationDelay: `${delay}ms` }}>
       <div className={styles.date}>
         <span style={{ fontWeight: "bold" }}>{format(day.date, "eeee")}</span>
         <span>{format(day.date, "do")}</span>

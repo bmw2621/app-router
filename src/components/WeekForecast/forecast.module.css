@@ -14,6 +14,9 @@
 }
 
 .card {
+  opacity: 0;
+  position: relative;
+  top: -30px;
   border: 1px solid var(--primary);
   border-radius: 10px;
   background-color: white;
@@ -22,6 +25,18 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  animation: fly-in 1s forwards ease-in;
+}
+
+@keyframes fly-in {
+  from {
+    opacity: 0;
+    top: -30px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
 }
 
 .date {

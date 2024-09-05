@@ -17,8 +17,12 @@ const WeekForecast: FC<Props> = ({ forecast }) => {
     <section className={styles.container}>
       <h3>Daily Forecast</h3>
       <div className={styles.days}>
-        {forecast.map((day) => (
-          <ForecastCard key={day.date.toISOString()} day={day} />
+        {forecast.map((day, i) => (
+          <ForecastCard
+            key={day.date.toISOString()}
+            day={day}
+            delay={i * 100}
+          />
         ))}
       </div>
     </section>
